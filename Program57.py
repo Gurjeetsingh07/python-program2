@@ -1,38 +1,57 @@
 
 
+num = 407
 
+# To take input from the user
+#num = int(input("Enter a number: "))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-n = int(input("Enter a number: "))
-
-def armstrong(num):
-  sum = 0
-  temp = num
-  while temp > 0:
-    digit = temp % 10
-    sum += digit ** 3
-    temp //= 10
-  return sum
-
-summ=armstrong(n)
-if n == summ:
-   print(n,"is an Armstrong number")
+# prime numbers are greater than 1
+if num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
 else:
-   print(n,"is not an Armstrong number")
+   print(num,"is not a prime number")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+   
+    
+    
+ 
+
+
+
+   
+
+   
 
 
 
